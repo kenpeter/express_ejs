@@ -2,12 +2,14 @@
 var express = require('express')
 var stylus = require('stylus')
 var nib = require('nib')
-var ejsLayouts = require('express-ejs-layouts')
+//var ejsLayouts = require('express-ejs-layouts')
 
 var app = express()
 
 // set view engine to ejs
 app.set('view engine', 'ejs')
+
+//app.use(ejsLayouts);
 
 function compile(str, path) {
     return stylus(str)
